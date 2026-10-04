@@ -11,8 +11,7 @@ performers in the business.
 
 ## 📊 About the Data
 
-The data analyzed here comes directly from the **Gold layer** of my
-personal Data Warehouse project — a medallion-architecture pipeline
+The data analyzed here comes directly from the **Gold layer**  Data Warehouse project — a medallion-architecture pipeline
 (Bronze → Silver → Gold) built entirely in Oracle.
 
 The Gold layer exposes a **star schema** with three views:
