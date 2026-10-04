@@ -50,4 +50,4 @@ Each step answers a specific kind of question:
 
 ---
 
-
+Important: This is a guided project from (Bara)[https://github.com/DataWithBaraa] who made it in sql server using t-sql, i've translated it to pl/sql in Oracle (XE)
