@@ -29,3 +29,26 @@ FROM gold.dim_customers;
 -- 7. Total number of customers that have placed an order
 SELECT COUNT(DISTINCT customer_key) AS customers_with_orders
 FROM gold.fact_sales;
+
+
+-- For a full report: 
+SELECT 'Total Sales' AS measure_name, SUM(sales_amount) AS measure_value FROM gold.fact_sales
+UNION ALL
+SELECT 'Total Quantity',SUM(quantity)FROM gold.fact_sales
+UNION ALL
+SELECT 'Average Price',ROUND(AVG(price), 2)FROM gold.fact_sales
+UNION ALL
+SELECT 'Total Nr. Orders',COUNT(DISTINCT order_number)FROM gold.fact_sales
+UNION ALL
+SELECT 'Total Nr. Products',COUNT(product_name)FROM gold.dim_products
+UNION ALL
+SELECT 'Total Nr. Customers', COUNT(customer_key) FROM gold.dim_customers;
+
+
+
+
+
+
+
+
+
